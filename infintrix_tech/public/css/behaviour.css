@@ -1,0 +1,32 @@
+
+form.form-inline.fill-width.justify-content-end {
+    justify-content: center !important;
+}
+
+form.form-inline.fill-width.justify-content-end.search-open {
+    position: absolute;
+    top: 300px;
+    /* left: 40%; */
+    width: 100%;
+}
+.search-bar {
+    min-width: 40vw;
+}
+.search-bar .awesomplete ul.search-open {
+    border-left: 1px solid var(--main-color);
+	border-right: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+    border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+    background: white;
+    width: 100% !important;
+}
+.search-bar .awesomplete input.search-open{
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+}

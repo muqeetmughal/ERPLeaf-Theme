@@ -25,8 +25,9 @@ app_license = "unlicense"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/infintrix_tech/css/infintrix_tech.css"
-# app_include_js = "/assets/infintrix_tech/js/infintrix_tech.js"
+app_include_css = ["/assets/infintrix_tech/css/erpleaf.css","/assets/infintrix_tech/css/behaviour.css"]
+app_include_js = ["/assets/infintrix_tech/js/erpleaf.js","/assets/infintrix_tech/js/behaviour.js"]
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/infintrix_tech/css/infintrix_tech.css"
@@ -83,12 +84,12 @@ app_license = "unlicense"
 # ------------
 
 # before_install = "infintrix_tech.install.before_install"
-# after_install = "infintrix_tech.install.after_install"
+after_install = "infintrix_tech.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "infintrix_tech.uninstall.before_uninstall"
+before_uninstall = "infintrix_tech.uninstall.before_uninstall"
 # after_uninstall = "infintrix_tech.uninstall.after_uninstall"
 
 # Integration Setup
@@ -174,9 +175,9 @@ app_license = "unlicense"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "infintrix_tech.event.get_events"
-# }
+override_whitelisted_methods = {
+	"frappe.core.doctype.user.user.switch_theme": "infintrix_tech.override.switch_theme"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
