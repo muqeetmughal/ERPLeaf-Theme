@@ -87,13 +87,13 @@ h6.uppercase {
 }
 
 /* Widgets */
-[data-theme=erpleaf] .widget {
+/* [data-theme=erpleaf] .widget {
 	background-color: #fff;
 	border: 1px solid #e2e8f0;
 	border-radius: .6rem;
 	position: relative;
 	box-shadow: 0 3px 5px #0000000b;
-}
+} */
 
 [data-theme=erpleaf] .widget.shortcut-widget-box .widget-head .widget-title i {
 	color: var(--main-color);
@@ -159,7 +159,7 @@ h6.uppercase {
 [data-theme=erpleaf] .section-head,
 [data-theme=erpleaf] .comment-input-header {
 	font-size: 14px;
-	color: var(--main-color);
+	color: var(--second-color);
 
 }
 
@@ -258,12 +258,6 @@ h6.uppercase {
 	background: var(--widget-bg);
 }
 
-[data-theme=erpleaf] .page-container,
-[data-theme=erpleaf] .layout-main-section {
-	background-color: #f2f2f2;
-
-}
-
 
 [data-theme=erpleaf] .blur-bg {
 	filter: blur(8px);
@@ -282,9 +276,65 @@ h6.uppercase {
 [data-theme=erpleaf] .comment-count>svg>use {
 	stroke: #4084ff;
 }
-[data-theme=erpleaf] .body-sidebar-container {
-    display: none !important;
+
+[data-theme=erpleaf] a.app-switcher-dropdown {
+	display: none !important;
 }
+
 [data-theme=erpleaf] li.dropdown-help {
-    display: none !important;
+	display: none !important;
+}
+
+[data-theme=erpleaf] .erpleaf-logo {
+	width: 100px;
+	padding: 0px 5px;
+}
+
+[data-theme=erpleaf] .body-sidebar .standard-sidebar-section:first-child {
+	margin-top: 0px !important;
+}
+
+
+[data-theme=erpleaf] .body-sidebar {
+
+	background: #effff8;
+	border: 1px solid #1b7f52;
+
+}
+[data-theme=erpleaf] {
+
+	@media (min-width: 576px) {
+		.body-sidebar-container:hover .body-sidebar {
+			position: absolute;
+			width: 200px;
+			transition: width 0.3s ease;
+		}
+
+	}
+}
+[data-theme=erpleaf] .body-sidebar {
+		width: 53px;
+		transition: width 0.3s ease;
+	}
+[data-theme=erpleaf] .form-control:focus {
+    color: var(--text-color);
+    border-color: var(--main-color);
+	box-shadow: 0 0 0 2px rgba(0, 106, 78, 0.5);
+}
+[data-theme=erpleaf] .widget.shortcut-widget-box {
+    border: 0.3px solid var(--main-color);
+	box-shadow: 0 3px 5px #0000000b;
+}
+[data-theme=erpleaf] .widget.links-widget-box {
+    border: 0.5px solidvar(--main-color);
+	box-shadow: 0 3px 5px #0000000b;
+
+}
+
+
+[data-theme=erpleaf] .widget.shortcut-widget-box:hover {
+	box-shadow: 0 0 0 2px rgba(0, 106, 78, 0.5);}
+[data-theme=erpleaf] .widget.links-widget-box:hover {
+	box-shadow: 0 0 0 2px rgba(0, 106, 78, 0.5);
+
 }
